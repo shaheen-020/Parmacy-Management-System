@@ -38,10 +38,6 @@ export default function Navigation({ sidebarOpen, toggleSidebar }) {
         }
     };
 
-    const handleClickOutsideDropdown = (event) => {
-        // Only close dropdowns if clicking outside the entire sidebar on mobile
-        // or just ignore for now to ensure stability
-    };
 
     useEffect(() => {
         document.title = "Dashboard";

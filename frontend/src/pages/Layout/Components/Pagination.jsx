@@ -9,29 +9,25 @@ export default function Pagination({
 }) {
     const renderPageNumbers = () => {
         const pageNumbers = [];
-        const visiblePages = 3; // Jumlah halaman yang terlihat sebelum dan sesudah halaman saat ini
+        const visiblePages = 3; 
 
         if (totalPages <= 2 + visiblePages * 2) {
-            // Jika total halaman <= jumlah halaman yang terlihat * 2 + 2 (prev & next)
             for (let i = 1; i <= totalPages; i++) {
                 pageNumbers.push(i);
             }
         } else if (currentPage <= visiblePages + 1) {
-            // Jika halaman saat ini berada di awal (1, 2, 3, ...)
             for (let i = 1; i <= visiblePages * 2 + 1; i++) {
                 pageNumbers.push(i);
             }
             pageNumbers.push("...");
             pageNumbers.push(totalPages);
         } else if (currentPage >= totalPages - visiblePages) {
-            // Jika halaman saat ini berada di akhir (..., 19, 20, 21)
             pageNumbers.push(1);
             pageNumbers.push("...");
             for (let i = totalPages - visiblePages * 2; i <= totalPages; i++) {
                 pageNumbers.push(i);
             }
         } else {
-            // Jika halaman saat ini berada di tengah-tengah (..., 6, 7, 8, 9, ...)
             pageNumbers.push(1);
             pageNumbers.push("...");
             for (

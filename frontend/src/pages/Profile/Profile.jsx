@@ -35,9 +35,7 @@ export default function Profile() {
             });
     }, [refetch]);
 
-    /**
-     * Initial form, reset input fields, handle input change and validate the form profile
-     */
+    //Initial form, reset input fields, handle input change and validate the form profile
 
     const [formProfile, setFormProfile] = useState({
         name: "",
@@ -75,9 +73,7 @@ export default function Profile() {
         setFormProfile({ ...formProfile, [name]: value });
     };
 
-    /**
-     * Initial form, reset input fields, handle input change and validate the form password
-     */
+    // Initial form, reset input fields, handle input change and validate the form password
 
     const [formPassword, setFormPassword] = useState({
         current_password: "",
