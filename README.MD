@@ -1,5 +1,9 @@
 Pharmacy Management System
 
+Author,
+Dhiraj Dhar Dip, ID: 232-134-019
+MD Shaheenur Rashid, ID: 232-134-020
+
 The Pharmacy Management System is a web-based application designed to manage daily pharmacy operations efficiently.
 It helps in handling medicine inventory, sales, suppliers, and customer records while reducing manual work and errors.
 
